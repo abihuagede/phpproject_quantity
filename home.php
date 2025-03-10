@@ -1,5 +1,6 @@
 <?php
-session_start();
+
+session_start()
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,19 +12,7 @@ session_start();
 </head>
 
 <body>
-    this is the home page <br>
-    <form action="home.php" method="post">
-        <input type="submit" name="logout" value="logout">
-    </form>
+    home
 </body>
 
-</html><?php
-
-        echo $_SESSION['username'] . "<br>";
-        echo $_SESSION['password'] . "<br>";
-
-        if (isset($_POST['logout'])) {
-            session_destroy();
-            header("location:login.php");
-        }
-        ?>
+</html>
